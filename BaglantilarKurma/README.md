@@ -6,21 +6,20 @@ Uygulama	 kullanıcının	 tıklayıp	 programdan	çıkabileceği	 bir	 butondan
    `main.cpp` dosyasını açın ve aşağıdaki kodu ekleyin:
     ```cpp
     
-    #include <QApplication>
-    #include <QPushButton>
-    
-    int main(int argc, char *argv[])
-    {
-    
-        QApplication app(argc, argv);
-        QPushButton *button = new QPushButton("Quit");
-        QObject::connect(button, SIGNAL(clicked()),
-                           &app, SLOT(quit()));
-        button->show();
-        return app.exec();
-    }
-    
-   ```
+       #include <QApplication>
+       #include <QPushButton>
+       
+       int main(int argc, char *argv[])
+       {
+       
+           QApplication app(argc, argv);
+           QPushButton *button = new QPushButton("Quit");
+           QObject::connect(button, SIGNAL(clicked()),
+                              &app, SLOT(quit()));
+           button->show();
+           return app.exec();
+       }
+
 
 ![image](https://github.com/Ebruavsar/Qt-deneme/assets/73585933/43af4de9-50cd-4928-9245-db5fb3c48648)
 
