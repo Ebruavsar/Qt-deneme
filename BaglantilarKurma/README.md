@@ -19,7 +19,8 @@ Uygulama	 kullanıcının	 tıklayıp	 programdan	çıkabileceği	 bir	 butondan
         button->show();
         return app.exec();
     }
-    ```
+    
+   ```
 
 ![image](https://github.com/Ebruavsar/Qt-deneme/assets/73585933/43af4de9-50cd-4928-9245-db5fb3c48648)
 
@@ -32,4 +33,4 @@ Bizim	örneğimizde,	butonun	clicked() sinyalini	QApplication nesnesinin	quit() 
 1. `Build` menüsünden `Build Project`'i seçin veya `Ctrl+B` tuşlarına basın.
 2. `Run` menüsünden `Run`'ı seçin veya `Ctrl+R` tuşlarına basın.
 
-Bu adımları izlediğinizde, düğmeye tıkladığınızda bir mesaj kutusunda "Hello, World!" yazısını görmelisiniz.
+
