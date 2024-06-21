@@ -4,7 +4,7 @@ Uygulama	 kullanıcının	 tıklayıp	 programdan	çıkabileceği	 bir	 butondan
 ## Kod Yazma
 
    `main.cpp` dosyasını açın ve aşağıdaki kodu ekleyin:
-    ```cpp
+```cpp
     
        #include <QApplication>
        #include <QPushButton>
@@ -19,7 +19,7 @@ Uygulama	 kullanıcının	 tıklayıp	 programdan	çıkabileceği	 bir	 butondan
            button->show();
            return app.exec();
        }
-
+```
 
 ![image](https://github.com/Ebruavsar/Qt-deneme/assets/73585933/43af4de9-50cd-4928-9245-db5fb3c48648)
 
