@@ -16,6 +16,8 @@ set(PROJECT_SOURCES
         main.cpp
         MyRect.cpp
         MyRect.h
+        Bullet.h
+        Bullet.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
