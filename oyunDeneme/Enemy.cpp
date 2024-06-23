@@ -1,9 +1,14 @@
-#include "Bullet.h"
+#include "Enemy.h"
 #include <QTimer>
 #include <QGraphicsScene>
-Bullet::Bullet(): QObject(), QGraphicsRectItem(){
+#include <stdlib.h> //tand()
+Enemy::Enemy(): QObject(), QGraphicsRectItem(){
+    //set random position
+    int random_number = rand()%700;
+    setPos(random_number,0);
+
     //drew the rect
-    setRect(0,0,10,50);
+    setRect(0,0,100,100);
 
     // connect
     QTimer * timer = new QTimer();
@@ -12,13 +17,13 @@ Bullet::Bullet(): QObject(), QGraphicsRectItem(){
     timer->start(50);
 }
 
-void Bullet::move()
+void Enemy::move()
 {
-   //move bullet up
-    setPos(x(),y()-10);
+    //move bullet up
+    setPos(x(),y()+5);
     if(pos().y()+rect().height() <0){
         scene()->removeItem(this);
         delete this;
-        qDebug() << "bullet deleted";
     }
 }
+
