@@ -14,12 +14,16 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         main.cpp
-        MyRect.cpp
-        MyRect.h
         Bullet.h
         Bullet.cpp
         Enemy.h
         Enemy.cpp
+        Game.h
+        Game.cpp
+        Player.cpp
+        Player.h
+        Score.h
+        Score.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
