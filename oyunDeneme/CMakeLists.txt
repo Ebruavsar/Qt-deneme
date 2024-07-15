@@ -24,6 +24,8 @@ set(PROJECT_SOURCES
         Player.h
         Score.h
         Score.cpp
+        Health.cpp
+        Health.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
